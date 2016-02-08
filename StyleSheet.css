@@ -1,0 +1,40 @@
+
+
+
+
+#login-form{
+    margin: auto;
+    height: 50%;
+    width: 10%;
+    align-self: center;
+
+}
+
+
+
+#headsection{
+    position: fixed;
+}
+
+
+
+#section1{
+    height: 25%;
+    width: 50%;
+    margin: 25%;
+    align-self: center;
+    align-content: space-between;
+
+}
+
+
+#sectionstartingsection{
+    width: 25%;
+    height: 50%;
+    margin: 10%;
+}
+
+.h1{
+    width: 25%;
+
+}
