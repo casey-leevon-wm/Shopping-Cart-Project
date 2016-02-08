@@ -2,6 +2,24 @@
 
 
 
+body{
+    height: auto;
+    background-color: beige;
+}
+
+
 #navigation{
     position: fixed;
+    top: 0;
+    border-bottom: none;
+
+    margin-inside: 10px;
+    outline: double;
+    width: 90%;
+    height: 10%;
+}
+
+
+#hB{
+
 }

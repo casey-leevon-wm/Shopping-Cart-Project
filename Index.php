@@ -26,5 +26,7 @@ require('Connecter.php');
             </form>
             <a href="Signup.php">Don't have an account?</a>
         </div>
+
+        <a href="HomePage.html">Random</a>
     </body>
 </html>
