@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>
+            About this
+        </title>
+        <link href="realStyleSheet.css" rel="stylesheet">
+        <script type="javascript" src="Script.js">
+            // in the works
+        </script>
+        <?php
+                require("Connecter.php")
+                if($_SESSION["userName"] & $_SESSION["password"] == null){
+                    header("Location: Index.php");
+                }
+        ?>
+    </head>
+    <body>
+        <div id="midsection">
+            <header id="head">
+                <h1>Hello! I am sure you are wondering what we do here, <?php echo $_SESSION["userName"] ?></h1>
+            </header>
+        </div>
+        <div id="headsection">
+            <nav id="navigation">
+                <a class="button" href="HomePage.html" id="hB" >Home</a>
+                <a class="button" href="NinjaProductspage.php" id="kiB" >Products</a>
+                <a class="button" href="LogoutPage.html" id="niB" >Logout</a>
+                <a class="button" href="CartPage.html" id="cB" >Cart</a>
+                <a class="button" href="ProfilePage.html" id="pB" >Profile</a>
+                <a class="button" href="Blog.html" id="blog" >Blog</a>
+            </nav>
+        </div>
+        <div id="almost">
+            <center>
+                <h2>
+                    What we sell:
+                </h2>
+                <ul class="unlistedlists">
+                    <li>
+
+                    </li>
+                    <li>
+                        <h3>Japanese Weapons</h3>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                        <h3>Japanese gear (if in stock)</h3>
+                    </li>
+                    <li>
+
+                    </li>
+                    <li>
+                        <h3>Related Martial Arts devices</h3>
+                    </li>
+                    <li>
+
+                    </li>
+                </ul>
+                <h2>
+                    
+                </h2>
+                <p>
+
+                </p>
+            </center>
+        </div>
+        <div id="bottom">
+
+        </div>
+    </body>
+</html>

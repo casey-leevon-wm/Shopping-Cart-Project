@@ -1,0 +1,46 @@
+
+<?php
+
+require('Connecter.php');
+    if($_SESSION["userName"] & $_SESSION["password"] == null){
+        header("Location: Index.php");
+    }
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+           Welcome <?php echo $_SESSION["username"]?>!
+        </title>
+        <link href="realStyleSheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="midsection">
+            <header id="head">
+                <h1><? php echo $_SESSION["username"] ?>'s Profile</h1>
+            </header>
+        </div>
+        <!--Navigation -->
+        <div id="headsection">
+            <nav id="navigation">
+                <a class="button" href="HomePage.html" id="hB" >Home</a>
+                <a class="button" href="NinjaProductspage.php" id="kiB" >Products</a>
+                <a class="button" href="LogoutPage.html" id="niB" >Logout</a>
+                <a class="button" href="CartPage.html" id="cB" >Cart</a>
+                <a class="button" id="pB" >Profile</a>
+                <a class="button" href="Blog.html" id="blog" >Blog</a>
+            </nav>
+        </div>
+        <!--Navigation end -->
+        <div id="almost">
+
+        </div>
+        <div id="bottom">
+
+        </div>
+    </body>
+</html>

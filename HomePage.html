@@ -1,28 +1,88 @@
 <!DOCTYPE html>
 
 
-<html lang="en">
+<html>
     <head>
         <title>
             Welcome to site!
         </title>
         <link href="realStyleSheet.css" rel="stylesheet">
+        <script type="javascript" src="Script.js">
+            // in the works
+        </script>
+        <?php
+            include_once 'Connecter.php';
+            if($_SESSION["userName"] & $_SESSION["password"] == null){
+                header("Location: Index.php");
+            }
+        ?>
     </head>
+
     <body>
+        <div id="midsection">
+            <header id="head">
+                <h1>Newly Add Products Of Possible Interest To You <?php echo $_SESSION["userName"] ?> </h1>
+            </header>
+
+        </div>
         <div id="headsection">
             <nav id="navigation">
-                <button id="hB" style="width: 100px; height: 100%">Home</button>
-                <button id="kiB" style="width: 100px; height: 100%">Killing items</button>
-                <button id="niB" style="width: 100px; height: 100%">Ninja Items</button>
-                <button id="cB" style="width: 100px; height: 100%">Cart</button>
-                <button id="pB" style="width: 100px; height: 100%">Profile</button>
+                <a class="button" id="hB" >Home</a>
+                <a class="button" href="NinjaProductspage.php" id="kiB" >Products</a>
+                <a class="button" href="LogoutPage.html" id="niB" >Logout</a>
+                <a class="button" href="CartPage.html" id="cB" >Cart</a>
+                <a class="button" href="ProfilePage.html" id="pB" >Profile</a>
+                <a class="button" href="AboutPage.html" id="blog" >About</a>
             </nav>
         </div>
-        <div id="midsection">
-
-        </div>
         <div id="almost">
-
+            <center>
+                <ul class="unlistedlists">
+                    <li><a href="">
+                        <h1>
+                            Katana
+                        </h1>
+                        <img src="http://www.tofugu.com/wp-content/uploads/2015/08/katana.jpg">
+                        </a>
+                        <h3>
+                            Description:
+                        </h3>
+                        <p class="information">
+                            The Katana (one of the most popularized of all Japanese weapons and of
+                            swords in general) strong enough to be used defensively but<br> sharp enough
+                            to cut through limbs. the katana earned the reputation as the soul of the
+                            samurai – a reputation that lasted long after the <br>samurai abandoned the
+                            sword for the pen.
+                        </p>
+                    </li>
+                    <li><a href="">
+                        <h1>
+                            Tonfa
+                        </h1>
+                        <img src="http://www.tofugu.com/wp-content/uploads/2015/08/tonfa.jpg">
+                        </a>
+                        <h3>
+                            Description:
+                        </h3>
+                        <p class="information">
+                            The tonfa also known as tong fa or tuifa, is a melee weapon best known for its role in the armed component of<br> Okinawan martial arts.
+                        </p>
+                    </li>
+                    <li><a href="">
+                        <h1>
+                            Sai
+                        </h1>
+                        <img src="http://www.tofugu.com/wp-content/uploads/2015/08/sai.jpg">
+                    </a>
+                        <h3>
+                            Description:
+                        </h3>
+                        <p class="information">
+                            The sai is a traditional weapon used in the Okinawan martial arts
+                        </p>
+                    </li>
+                </ul>
+            </center>
         </div>
         <div id="bottom">
 

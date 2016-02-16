@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>
+            Blog Page
+        </title>
+        <link href="realStyleSheet.css" rel="stylesheet">
+        <script type="javascript" src="Script.js">
+            // in the works
+        </script>
+        <?php
+            include_once 'Connecter.php';
+            if($_SESSION["userName"] & $_SESSION["password"] == null){
+                header("Location: Index.php");
+            }
+        ?>
+    </head>
+    <body>
+        <div id="midsection">
+            <header id="head">
+                <h1>Coming soon! :3</h1>
+            </header>
+
+        </div>
+        <div id="headsection">
+            <nav id="navigation">
+                <a class="button" href="HomePage.html" id="hB" >Home</a>
+                <a class="button" href="NinjaProductspage.php" id="kiB" >Products</a>
+                <a class="button" href="LogoutPage.html" id="niB" >Logout</a>
+                <a class="button" href="CartPage.html" id="cB" >Cart</a>
+                <a class="button" href="ProfilePage.html" id="pB" >Profile</a>
+                <a class="button" id="blog" >Blog</a>
+            </nav>
+        </div>
+
+        <div id="almost">
+
+        </div>
+        <div id="bottom">
+
+        </div>
+    </body>
+</html>

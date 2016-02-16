@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>
+            <?php
+
+            ?>
+        </title>
+        <link href="realStyleSheet.css" rel="stylesheet">
+        <link href="Cart.css" rel="stylesheet">
+        <script type="javascript" src="Script.js">
+            // in the works
+        </script>
+        <?php
+            require('Connecter.php');
+            if($_SESSION["userName"] & $_SESSION["password"] == null){
+                header("Location: Index.php");
+            }
+        ?>
+    </head>
+    <body>
+        <div id="midsection">
+            <header id="head">
+                <h1><? php echo $_SESSION["userName"] ?>'s Cart</h1>
+            </header>
+
+        </div>
+        <!--Navigation -->
+        <div id="headsection">
+            <nav id="navigation">
+                <a class="button" href="HomePage.html" id="hB" >Home</a>
+                <a class="button" href="NinjaProductspage.php" id="kiB" >Products</a>
+                <a class="button" href="LogoutPage.html" id="niB" >Logout</a>
+                <a class="button" id="cB" >Cart</a>
+                <a class="button" href="ProfilePage.html" id="pB" >Profile</a>
+                <a class="button" href="Blog.html" id="blog" >Blog</a>
+            </nav>
+        </div>
+
+        <div id="almost">
+
+        </div>
+        <div id="bottom">
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Why do you want to leave us!?!?!
+        </title>
+        <link href="realStyleSheet.css" rel="stylesheet">
+        <script type="javascript" src="Script.js">
+            // in the works
+        </script>
+        <?php
+            include_once 'Connecter.php';
+            if($_SESSION["userName"] & $_SESSION["password"] == null){
+                header("Location: Index.php");
+            }
+        ?>
+    </head>
+
+    <body>
+    <div id="midsection">
+        <header id="head">
+            <h1>Are you sure you want to logout?</h1>
+        </header>
+    </div>
+    <div id="headsection">
+        <nav id="navigation">
+            <a class="button" href="HomePage.html" id="hB" >Home</a>
+            <a class="button" href="NinjaProductspage.php" id="kiB" >Products</a>
+            <a class="button" id="niB" >Logout</a>
+            <a class="button" href="CartPage.html" id="cB" >Cart</a>
+            <a class="button" href="ProfilePage.html" id="pB" >Profile</a>
+            <a class="button" href="Blog.html" id="blog" >Blog</a>
+        </nav>
+        <center>
+            <p>
+                Your cart will save!<br>
+                Your Profile will save!<br>
+                Your settings will save!<br>
+            </p>
+            <button class="button" style="width: 10%" value="1">
+                Logout
+            </button>
+        </center>
+    </div>
+    </body>
+</html>
